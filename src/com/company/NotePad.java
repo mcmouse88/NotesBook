@@ -23,7 +23,7 @@ public class NotePad {
             index = scanner.nextLine();
             if (index.equals("start")) {
                 notes.add(0, note);
-            } else if (index.equals("end")) {
+            } else if (index.equals("end") || index.equals("")) {
                 notes.add(note);
             } else {
                 notes.add(Integer.parseInt(index) - 1, note);
